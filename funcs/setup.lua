@@ -1,18 +1,18 @@
 -- タイムゾーン取得 -> baset
 local t = os.time();
-local baset = os.difftime(t, os.time(os.date("!*t", t)));
+baset = os.difftime(t, os.time(os.date("!*t", t)));
 baset = ("%d"):format(baset);
 
 -- ベース値(Hex)作成 -> basex
-local x, basex = ("%08x"):format(baset & 0xffffffff), {};
+local x, x2 = ("%08x"):format(baset & 0xffffffff), {};
 for t in x:gmatch("%x%x") do
-    table.insert(basex, 1, t);
+    table.insert(x2, 1, t);
 end
-basex = "h "..table.concat(basex, " ");
+basex = "h "..table.concat(x2, " ");
 
 -- ベースアドレス取得 -> base
 gg.clearResults();
-local fs, base = gg.getRangesList("split_config.arm64_v8a.apk:bss");
+local fs = gg.getRangesList("split_config.arm64_v8a.apk:bss");
 gg.setRanges(fs[1] and -2080896 or 48);
 gg.searchNumber(basex, 1, false, 536870912, fs[1] and fs[1].start or 0, fs[1] and fs[1].start +0xffff or -1);
 gg.refineNumber(gg.getResults(1)[1].value, 1);
