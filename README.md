@@ -32,6 +32,6 @@ Nyanko_Script DEを使用したにゃんこスクリプトです。
 スクリプトの開発過程などを配信しています。  
   
 参照: https://www.youtube.com/@Rampage_7675  
-### 開発者
+## 開発者
 主宰: Rampage  
 協力: にゃんこIPc, 匿名
