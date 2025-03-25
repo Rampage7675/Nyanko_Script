@@ -22,7 +22,6 @@ local function encrypt(num)
 end
 
 local function certValues(res, max)
-    res = res or gg.getResults(10^5);
     local ret = {};
     for i = 1, #res-1 do
         local t = decrypt({res[i], res[i+1]}) or -1;
@@ -30,6 +29,7 @@ local function certValues(res, max)
             table.insert(ret, {["value"] = t, res[i], res[i+1]});
         end
     end
+    gg.loadResults(ret);
     return ret;
 end
 
