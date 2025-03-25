@@ -14,7 +14,7 @@ end
 print("Base value: "..baset..("(%s)"):format(basex));
 print("Base address: "..("0x%08x"):format(base & 0xffffffff));
 
---ネコ缶チート
+--テスト(ネコ缶)
 gg.clearResults();
 gg.setRanges(gg.REGION_C_BSS);
 ns.searchValues(2, base, -0x200, 58999);
