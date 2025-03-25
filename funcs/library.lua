@@ -29,7 +29,6 @@ local function certValues(res, max)
             table.insert(ret, {["value"] = t, res[i], res[i+1]});
         end
     end
-    gg.loadResults(ret);
     return ret;
 end
 
