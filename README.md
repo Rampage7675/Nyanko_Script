@@ -18,10 +18,11 @@ end
 # NS関数の使い方  
 NS関数はそれぞれ暗号関連、検索関連、編集関連に分かれています。  
 Nyanko_Script DEを導入すると、`ns.関数名(引数)`という形で使用できます。  
-オープンソースで公開しているので気になる方は節末の参照リンクからご観覧ください。  
-また、`print(ns._explain)`を実行すると各関数の詳細を確認することができます。  
+オープンソースで公開しているので気になる方は[NS関数(プログラム)](https://github.com/Rampage7675/Nyanko_Script/blob/main/funcs/library.lua)をご観覧ください。  
+各関数の解説及び使用例は節末の参照リンクから観覧できます。  
+また、各関数の概要は`print(ns._explain)`を実行して確認することもできます。  
   
-参照: [NS関数](https://github.com/Rampage7675/Nyanko_Script/blob/main/funcs/library.lua)
+参照: [NS関数(索引)](https://github.com/Rampage7675/Nyanko_Script/tree/main/fns-example)
 # Nyanko_Script
   
 Nyanko_Script DEを使用したにゃんこスクリプトです。  
