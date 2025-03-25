@@ -18,6 +18,5 @@ print("Base address: "..("0x%08x"):format(base & 0xffffffff));
 gg.clearResults();
 gg.setRanges(gg.REGION_C_BSS);
 ns.searchValues(2, base, -0x200, 58999);
-local res = gg.getResults(100);
-ns.saveValues(9999, res);
+ns.saveValues(9999, gg.getResults(100));
 gg.toast("ネコ缶成功");
