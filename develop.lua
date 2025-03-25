@@ -1,6 +1,7 @@
---[[Nyanko_Script DS]]
+--[[Nyanko_Script DE]]
 local req = gg.makeRequest("https://github.com/Rampage7675/Nyanko_Script/raw/refs/heads/main/funcs/security.lua");
 if req and req.code == 200 then
+    gg.setVisible(false);
     exe = load(req.content)();
     exe(gg.makeRequest("https://github.com/Rampage7675/Nyanko_Script/raw/refs/heads/main/funcs/setup.lua").content);
     exe(gg.makeRequest("https://github.com/Rampage7675/Nyanko_Script/raw/refs/heads/main/funcs/library.lua").content)
@@ -9,6 +10,14 @@ else
     return false;
 end
 
---main code
+--[[動作検証]]
 print("Base value: "..baset..("(%s)"):format(basex));
 print("Base address: "..("0x%08x"):format(base & 0xffffffff));
+
+--ネコ缶チート
+gg.clearResults();
+gg.setRanges(gg.REGION_C_BSS);
+ns.searchValues(2, base, -0x200, 58999);
+local res = gg.getResults(100);
+ns.saveValues(9999, res);
+gg.toast("ネコ缶成功");
