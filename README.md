@@ -1,4 +1,4 @@
-# Nyanko_Script_DE
+# Nyanko_Script DE
 にゃんこスクリプトを作成する際に便利な開発環境を提供します。  
 下記のプログラムをコピペしてご使用ください。
 ```lua
@@ -14,7 +14,14 @@ else
     return false;
 end
 ```
-参照: [Nyanko_Script DE](https://github.com/Rampage7675/Nyanko_Script/blob/main/develop.lua)
+参照: [Nyanko_Script DE](https://github.com/Rampage7675/Nyanko_Script/blob/main/develop.lua)  
+# NS関数の使い方  
+NS関数はそれぞれ暗号関連、検索関連、編集関連に分かれています。  
+Nyanko_Script DEを導入すると、`ns.関数名(引数)`という形で使用できます。  
+オープンソースで公開しているので気になる方は節末の参照リンクからご観覧ください。  
+また、`print(ns._explain)`を実行すると各関数の詳細を確認することができます。  
+  
+参照: [NS関数](https://github.com/Rampage7675/Nyanko_Script/blob/main/funcs/library.lua)
 # Nyanko_Script
   
 Nyanko_Script DEを使用したにゃんこスクリプトです。  
