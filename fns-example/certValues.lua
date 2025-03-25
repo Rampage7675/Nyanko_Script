@@ -30,4 +30,4 @@ print(ns.certValues(gg.getResults(2), 58999));
 
 --ちなみにns.searchValuesにはこの関数が搭載されていますので併用はあまり意味ないです。
 --ns.alayzeMemoryとの併用又は単体での使用が主になると思います。
---戻り値は各組み合わせの配列なのでgg.loadResults(ns.certValues(res, 10000));としては使用できません。
+--戻り値は各組み合わせの配列なのでgg.loadResults(ns.certValues(res, 10000));のようには使用できません。
