@@ -15,6 +15,7 @@ local function decrypt(vals)
 end
 
 local function encrypt(num)
+    num = tonumber(num);
     local v2 = math.random(2^29) + (num/2^30 == 0 and 2^30 or 0);
     local v1 = decrypt({{["value"] = num}, {["value"] = v2}});
     v1 = v1 - (2^31 <= v1 and 2^32 or 0);
