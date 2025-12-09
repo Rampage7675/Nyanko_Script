@@ -15,6 +15,9 @@ else
 end
 ```
 参照: [Nyanko_Script DE](https://github.com/Rampage7675/Nyanko_Script/blob/main/develop.lua)  
+
+---
+
 # NS関数の使い方  
 NS関数はそれぞれ暗号関連、検索関連、編集関連に分かれています。  
 Nyanko_Script DEを導入すると、`ns.関数名(引数)`という形で使用できます。  
@@ -23,6 +26,9 @@ Nyanko_Script DEを導入すると、`ns.関数名(引数)`という形で使用
 また、各関数の概要は`print(ns._explain)`を実行して確認することもできます。  
   
 参照: [NS関数(索引)](https://github.com/Rampage7675/Nyanko_Script/tree/main/fns-example)
+
+---
+
 # Nyanko_Script
   
 Nyanko_Script DEを使用したにゃんこスクリプトです。  
@@ -30,17 +36,18 @@ Nyanko_Script DEを使用したにゃんこスクリプトです。
   
 参照:  [Nyanko_Script](https://github.com/Rampage7675/Nyanko_Script/blob/main/index.lua)
 
+---
+
 ## サポート  
-> Discordサバ
+[Discord](https://discord.gg/zXYYnBt4N4)
   
-不明な点がありましたらこちらにお問い合わせください。  
+> 不明な点がありましたらこちらにお問い合わせください。  
   
-参照: https://discord.gg/zXYYnBt4N4  
-> YouTube
+[YouTube](https://www.youtube.com/@Rampage_7675)
   
-スクリプトの開発過程などを配信しています。  
-  
-参照: https://www.youtube.com/@Rampage_7675  
+> スクリプトの開発過程などを配信しています。  
+
+---
+
 ## 開発者
-主宰: Rampage  
-協力: にゃんこIPc, 匿名
+にゃんこIPc, Rampage  
